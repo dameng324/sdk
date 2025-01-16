@@ -39,7 +39,6 @@
     <BuildArgs>$(BuildArgs) /p:FallbackPublicBaseURL=https://dotnetbuilds.blob.core.windows.net/public/</BuildArgs>
     <BuildArgs>$(BuildArgs) /p:UsePortableLinuxSharedFramework=false</BuildArgs>
 
-    <BuildArgs Condition="'$(PgoInstrument)' == 'true'">$(BuildArgs) /p:PgoInstrument=true</BuildArgs>
     <BuildArgs Condition="'$(EnablePoison)' == 'true'">$(BuildArgs) /p:DISABLE_CROSSGEN=true</BuildArgs>
   </PropertyGroup>
 
